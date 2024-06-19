@@ -1,5 +1,7 @@
 body {
-  background-color: #1e1e1e 
+  background-color: #1e1e1e ;
+  padding: 2%;
+
 }
 @tailwind base;
 @tailwind components;
