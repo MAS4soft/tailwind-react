@@ -1,8 +1,9 @@
 import Nav from "./Components/Nav.jsx";
-
+import Hero from "./Components/Hero.jsx";
 const app =() => {
-return <main className="bg-gray-900 p-4 text-gray-400" >
+return <main className=" p-4 text-gray-400" >
 <Nav />
+<Hero />
 </main>;
 };
 
