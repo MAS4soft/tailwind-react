@@ -9,7 +9,7 @@ import cons06 from "../assets/cons06.jpg"
 
 const Services = () => {
   return (
-  <div>
+  <div className="border-b-2 border-b-gray-800 py-4" >
       <h1 className="text-2xl font-bold text-black-500">Build Your Dream</h1>
       <h2 className=" py-2 text-4xl font-bold mb-8">Quality Services</h2>
     
