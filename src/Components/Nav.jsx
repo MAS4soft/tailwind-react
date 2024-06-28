@@ -31,14 +31,14 @@ const Nav = () => {
   return (
     <nav className="flex justify-between border-b-2 border-b-gray-800 py-4 relative">
       <div className="flex items-center gap-4">
-        <div className="bg-gray-800 p-5 rounded-full">
+        <div className="bg-gray-800 p-5 rounded-full hover:text-yellow-400">
           <MdOutlineMessage className="text-xl" />
         </div>
         <span className="hover:text-yellow-400">Get in touch</span>
       </div>
       <ul className="flex items-center gap-4 text-2xl">
         <li className="md:hidden">
-          <button onClick={toggleDropdown} className="focus:outline-none">
+          <button onClick={toggleDropdown} className="hover:text-yellow-400 focus:outline-none">
             <IoMdMenu />
           </button>
         </li>

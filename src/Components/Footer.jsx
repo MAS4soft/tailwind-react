@@ -11,12 +11,12 @@ return (
     </div>
 
     <ul className="flex items-center justify-center  gap-2 px-4 text-2xl">
-      <li className="md:hidden"><FaInstagram />      </li>
-      <li className="md:hidden"><CiFacebook />      </li>
-      <li className="md:hidden"><IoLogoYoutube />      </li>
-        <li className="hidden md:block md:text-sm">INSTGRAM</li>
-        <li className="hidden md:block md:text-sm">FACEBOOK</li>
-        <li className="hidden md:block md:text-sm">YOUTUBE</li>
+      <li className="hover:text-yellow-400 md:hidden"><FaInstagram />      </li>
+      <li className="hover:text-yellow-400 md:hidden"><CiFacebook />      </li>
+      <li className="hover:text-yellow-400 md:hidden"><IoLogoYoutube />      </li>
+        <li className="hidden hover:text-yellow-400 md:block md:text-sm">INSTGRAM</li>
+        <li className="hidden hover:text-yellow-400 md:block md:text-sm">FACEBOOK</li>
+        <li className="hidden hover:text-yellow-400 md:block md:text-sm">YOUTUBE</li>
     </ul>
    
    
