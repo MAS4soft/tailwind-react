@@ -3,8 +3,8 @@ const Hero = () => {
   return (
   <div className="flex flex-col border-b-2 border-b-gray-800 py-4">
     <div className="py-8">
-      <h1 className="text-3xl font-bold text-yellow-500">Build Your Dream</h1>
-      <h2 className=" py-2 text-6xl font-bold">Vision Got Larger</h2>
+      <h1 className="text-3xl md:text-5xl font-bold text-yellow-500">Build Your Dream</h1>
+      <h2 className=" py-2 p-4 md:text-7xl text-5xl font-bold">Vision Got Larger</h2>
     </div>
       <p className="w-8/12" >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.

@@ -1,6 +1,22 @@
-import  { useState, useEffect, useRef } from 'react';
-import { MdOutlineMessage } from 'react-icons/md';
-import { IoMdMenu } from 'react-icons/io';
+const NavMenu = () => {
+  return (
+    <div className="p-4">
+      <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+        <a href="#" className="text-white font-bold text-lg">Home</a>
+        <a href="#" className="text-white font-bold text-lg">Contact Us</a>
+        <a href="#" className="text-white font-bold text-lg">About Us</a>
+        <a href="#" className="text-white font-bold text-lg">Services</a>
+        <a href="#" className="text-white font-bold text-lg">Blog</a>
+      </div>
+    </div>
+  );
+};
+
+export default NavMenu;
+
+import { useState, useEffect, useRef } from "react";
+import { MdOutlineMessage } from "react-icons/md";
+import { IoMdMenu } from "react-icons/io";
 
 const Nav = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -21,13 +37,13 @@ const Nav = () => {
       }
     };
 
-    document.addEventListener('click', handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
+
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, [dropdownOpen]);
 
-  
   return (
     <nav className="flex justify-between border-b-2 border-b-gray-800 py-4 relative">
       <div className="flex items-center gap-4">
@@ -38,27 +54,27 @@ const Nav = () => {
       </div>
       <ul className="flex items-center gap-4 text-2xl">
         <li className="md:hidden">
-          <button onClick={toggleDropdown} className="focus:outline-none">
+          <button id="mobile-btn" onClick={toggleDropdown} className="focus:outline-none">
             <IoMdMenu />
           </button>
         </li>
-        <li className="hidden md:block md:text-sm">
+        <li className="hidden md:block  md:text-sm">
           <nav className="flex space-x-4">
-            <a href="#" className="text-white hover:text-yellow-400 text-lg">Home</a>
-            <a href="#" className="text-white hover:text-yellow-400 text-lg">Services</a>
-            <a href="#" className="text-white hover:text-yellow-400 text-lg">History</a>
-            <a href="#" className="text-white hover:text-yellow-400 text-lg">About Us</a>
-            <a href="#" className="text-white hover:text-yellow-400 text-lg">Contact Us</a>
+            <a href="#" className="text-white hover:text-yellow-400  text-lg">Home</a>
+            <a href="#" className="text-white hover:text-yellow-400  text-lg">Services</a>
+            <a href="#" className="text-white hover:text-yellow-400  text-lg">History</a>
+            <a href="#" className="text-white hover:text-yellow-400  text-lg">Services</a>
+            <a href="#" className="text-white hover:text-yellow-400  text-lg">About us</a>
           </nav>
         </li>
       </ul>
       {dropdownOpen && (
         <div ref={dropdownRef} className="dropdown-menu absolute top-16 right-0 w-full bg-gray-800 z-50 p-4">
-          <nav className="flex flex-col items-center space-y-4 bg-yellow-300 py-8 drop-shadow-lg border-gray-400">
+          <nav className="flex flex-col space-y-2">
             <a href="#" className="text-white font-bold text-lg">Home</a>
             <a href="#" className="text-white font-bold text-lg">Services</a>
             <a href="#" className="text-white font-bold text-lg">About Us</a>
-            <a href="#" className="text-white font-bold text-lg">History</a>
+            <a href="#" className="text-white font-bold text-lg">Services</a>
             <a href="#" className="text-white font-bold text-lg">Contact Us</a>
           </nav>
         </div>
@@ -68,3 +84,4 @@ const Nav = () => {
 };
 
 export default Nav;
+

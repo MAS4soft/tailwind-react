@@ -10,7 +10,7 @@ return (
         <span> Copyright © 2024 Aramedia Construction Company  </span>
     </div>
 
-    <ul className="flex items-center gap-4 text-2xl">
+    <ul className="flex items-center justify-center  gap-2 px-4 text-2xl">
       <li className="md:hidden"><FaInstagram />      </li>
       <li className="md:hidden"><CiFacebook />      </li>
       <li className="md:hidden"><IoLogoYoutube />      </li>

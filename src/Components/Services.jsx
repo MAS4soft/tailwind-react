@@ -5,8 +5,6 @@ import cons04 from "../assets/cons04.jpg"
 import cons05 from "../assets/cons05.jpg"
 import cons06 from "../assets/cons06.jpg"
 
-
-
 const Services = () => {
   return (
   <div className="border-b-2 border-b-gray-800 py-4" >
